@@ -1,0 +1,103 @@
+body {
+   background: #ede5d1;
+   font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+   color: rgba(75, 55, 40, 0.831);
+   text-align: center;
+   margin-top: 40px;
+   font-size: 2.2em;
+   letter-spacing: 1px;
+   font-weight: 700;
+}
+
+#tableContainer {
+   max-width: 1000px;
+   margin: 30px auto 0 auto;
+   border-radius: 16px;
+   padding: 30px 24px 24px 24px;
+}
+
+table {
+   width: 100%;
+   border-collapse: separate;
+   border-spacing: 0;
+   background: #fff;
+   border-radius: 12px;
+   overflow: hidden;
+   box-shadow: 0 2px 12px #0001;
+}
+
+th, td {
+   padding: 14px 18px;
+   text-align: left;
+   font-size: 1.07em;
+}
+
+th {
+   background: rgba(243, 196, 161, 0.937) ;
+   font-weight: 700;
+   border-bottom: 2.5px solid #e9a852ba;
+   font-size: 1.1em;
+   letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) td {
+   background: #fbeee0;
+}
+
+tr:nth-child(odd) td {
+   background: #fff;
+}
+
+td {
+   color: #2d4838;
+   border-bottom: 1px solid #f3e1c5;
+   transition: background 0.2s;
+   
+}
+
+.highlight {
+   background: #ffe066;
+   color: #63243e;
+   border-radius: 3px;
+   padding: 0 2px;
+   font-weight: bold;
+}
+
+@media (max-width: 700px) {
+#tableContainer {
+   padding: 10px 2vw 10px 2vw;
+}
+th, td {
+padding: 10px 6px;
+   font-size: 1em;
+}
+table {
+   font-size: 0.95em;
+}
+}
+
+#localSearchInput {
+  display: block;
+  margin: 30px auto 20px auto;
+  width: 350px;
+  max-width: 95vw;
+  padding: 12px 18px;
+  font-size: 1.13em;
+  border-radius: 7px;
+  border: 1.5px solid #c7a47b;
+  box-shadow: 0 2px 8px #0001;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#localSearchInput:focus {
+  outline: none;
+  border-color: #e9a852ba;
+  box-shadow: 0 2px 16px #e9a85244;
+}
+

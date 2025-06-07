@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фразеологизмы русского языка</title>
+<link rel="icon" type="image/png" href="icon2.jpg">
+<link rel="stylesheet" href="knowledge.css">
+<link rel="stylesheet" href="https://unpkg.com/hystmodal/dist/hystmodal.min.css">
+<script src="https://unpkg.com/hystmodal/dist/hystmodal.min.js"></script>
+</head>
+<body>
+
+<div class="navbar">   
+    <ul class="list">
+        <li id="startQuizBtn">Квиз</li>
+        <li data-hystmodal="#guide-modal">Руководство</li>
+    </ul>
+</div>
+
+<div id="research">
+        <label for="text">
+            <input type="search" id="text">
+            <img src="search1.png" alt="">
+        </label>
+</div>
+<h1><span class="underline"> О знаниях </span></h1>
+
+<div>
+<select id="categorySelect">
+    <option value="all">Все категории</option>
+</select>
+<div id="tableContainer"></div>
+</div>
+
+<div class="hystmodal" id="guide-modal" aria-hidden="true">
+<div class="hystmodal__wrap">
+   <div class="hystmodal__window" role="dialog" aria-modal="true">
+      <button data-hystclose class="hystmodal__close" aria-label="Закрыть">&times;</button>
+      <h2>Руководство</h2>
+      <div>
+         <p>
+            Добро пожаловать!<br>
+            На этом сайте вы можете:
+            <br>• Просматривать фразеологизмы по категориям
+            <br>• Искать информацию по словам
+            <br>• Узнавать значения и примеры употребления
+            <br>• Проверять свои знания фразеологизмов
+            <br>
+            <br>
+            Для просмотра нужного фразеологизма выберите категорию
+            <br> 
+            Для поиска нажмите на лупу
+            <br>
+            Для проверки знаний нажмите Квиз
+         </p>
+      </div>
+   </div>
+</div>
+</div>
+
+
+<div id="quizModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close" id="closeQuiz">&times;</span>
+    <div class="quiz-card">
+      <div class="card-inner" id="cardInner">
+        <div id="cardFront" class="card-side front">
+          <div class="label">Фразеологизм</div>
+          <h2 id="phraseText"></h2>
+          <button id="flipBtn" class="quiz-btn">Перевернуть</button>
+        </div>
+        <div id="cardBack" class="card-side back">
+          <div class="label">Значение</div>
+          <h2 id="meaningText"></h2>
+          <button id="nextBtn" class="quiz-btn">Дальше</button>
+          <button id="finishBtn" class="quiz-btn">Завершить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="knowledge.js"></script>
+</body>
+</html>
